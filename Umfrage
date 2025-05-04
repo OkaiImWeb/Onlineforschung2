@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Umfrage zu Internetumfragen</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: 20px auto; padding: 20px; background-color: #f9f9f9; border-radius: 10px; }
+    h1 { text-align: center; }
+    label { display: block; margin-top: 15px; font-weight: bold; }
+    input, select, textarea { width: 100%; padding: 8px; margin-top: 5px; }
+    button { margin-top: 20px; padding: 10px 15px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background-color: #0056b3; }
+  </style>
+</head>
+<body>
+  <h1>Online-Umfrage: Ihre Meinung zu Internetumfragen</h1>
+  <form>
+    <label>1. Wie häufig nehmen Sie an Internetumfragen teil?</label>
+    <select required>
+      <option value="">Bitte wählen...</option>
+      <option>Regelmäßig</option>
+      <option>Gelegentlich</option>
+      <option>Selten</option>
+      <option>Niemals</option>
+    </select>
+
+    <label>2. Wie vertrauenswürdig finden Sie Online-Umfragen?</label>
+    <select required>
+      <option value="">Bitte wählen...</option>
+      <option>Sehr vertrauenswürdig</option>
+      <option>Vertrauenswürdig</option>
+      <option>Wenig vertrauenswürdig</option>
+      <option>Überhaupt nicht vertrauenswürdig</option>
+    </select>
+
+    <label>3. Was motiviert Sie zur Teilnahme an Internetumfragen?</label>
+    <textarea rows="3" placeholder="Ihre Antwort..."></textarea>
+
+    <label>4. Welche Geräte nutzen Sie hauptsächlich für Online-Umfragen?</label>
+    <select>
+      <option value="">Bitte wählen...</option>
+      <option>Smartphone</option>
+      <option>Tablet</option>
+      <option>Laptop / PC</option>
+      <option>Sonstiges</option>
+    </select>
+
+    <label>5. Alter (optional):</label>
+    <input type="number" min="10" max="120" placeholder="Alter in Jahren">
+
+    <button type="submit">Absenden</button>
+  </form>
+</body>
+</html>
