@@ -2,53 +2,107 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Umfrage zu Internetumfragen</title>
+  <title>Internetnutzung & Verzerrungen – Online-Umfrage</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 600px; margin: 20px auto; padding: 20px; background-color: #f9f9f9; border-radius: 10px; }
-    h1 { text-align: center; }
-    label { display: block; margin-top: 15px; font-weight: bold; }
-    input, select, textarea { width: 100%; padding: 8px; margin-top: 5px; }
-    button { margin-top: 20px; padding: 10px 15px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer; }
-    button:hover { background-color: #0056b3; }
+    body {
+      background-color: #000;
+      color: #00ffcc;
+      font-family: 'Courier New', monospace;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #00ffff;
+      text-shadow: 2px 2px #ff00ff;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+      background-color: #111;
+      padding: 20px;
+      border: 2px solid #ff00ff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #00ffff;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #ffcc00;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      background-color: #222;
+      color: #00ffcc;
+      border: 1px solid #00ffff;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #ff00ff;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 2px 2px #00ffff;
+    }
+    button:hover {
+      background-color: #cc00cc;
+    }
   </style>
 </head>
 <body>
-  <h1>Online-Umfrage: Ihre Meinung zu Internetumfragen</h1>
+
+  <h1>🖥️ Online-Umfrage zur Internetnutzung (2000er Style)</h1>
   <form>
-    <label>1. Wie häufig nehmen Sie an Internetumfragen teil?</label>
+    <label>1. Haben Sie Zugang zum Internet?</label>
     <select required>
       <option value="">Bitte wählen...</option>
-      <option>Regelmäßig</option>
-      <option>Gelegentlich</option>
-      <option>Selten</option>
-      <option>Niemals</option>
+      <option>Ja</option>
+      <option>Nein</option>
     </select>
 
-    <label>2. Wie vertrauenswürdig finden Sie Online-Umfragen?</label>
-    <select required>
-      <option value="">Bitte wählen...</option>
-      <option>Sehr vertrauenswürdig</option>
-      <option>Vertrauenswürdig</option>
-      <option>Wenig vertrauenswürdig</option>
-      <option>Überhaupt nicht vertrauenswürdig</option>
-    </select>
-
-    <label>3. Was motiviert Sie zur Teilnahme an Internetumfragen?</label>
-    <textarea rows="3" placeholder="Ihre Antwort..."></textarea>
-
-    <label>4. Welche Geräte nutzen Sie hauptsächlich für Online-Umfragen?</label>
+    <label>2. Wie häufig nutzen Sie das Internet?</label>
     <select>
-      <option value="">Bitte wählen...</option>
-      <option>Smartphone</option>
-      <option>Tablet</option>
-      <option>Laptop / PC</option>
-      <option>Sonstiges</option>
+      <option>Täglich</option>
+      <option>Mehrmals pro Woche</option>
+      <option>Selten</option>
+      <option>Nie</option>
     </select>
 
-    <label>5. Alter (optional):</label>
-    <input type="number" min="10" max="120" placeholder="Alter in Jahren">
+    <label>3. Welche Geräte nutzen Sie für den Internetzugang?</label>
+    <input type="text" placeholder="z.B. Smartphone, Laptop, Tablet">
 
-    <button type="submit">Absenden</button>
+    <label>4. Wie schätzen Sie Ihre Computerkenntnisse ein?</label>
+    <select>
+      <option>Experte</option>
+      <option>Fortgeschritten</option>
+      <option>Grundkenntnisse</option>
+      <option>Unsicher</option>
+    </select>
+
+    <label>5. Haben Sie schon einmal an einer Internetumfrage teilgenommen?</label>
+    <select>
+      <option>Ja</option>
+      <option>Nein</option>
+      <option>Ich weiß es nicht mehr</option>
+    </select>
+
+    <label>6. Welche Gruppen könnten Ihrer Meinung nach in Online-Umfragen unterrepräsentiert sein?</label>
+    <textarea rows="3" placeholder="z.B. ältere Menschen, Menschen ohne Internetzugang..."></textarea>
+
+    <label>7. Alter (optional):</label>
+    <input type="number" min="10" max="120" placeholder="Alter">
+
+    <label>8. Kommentare oder Gedanken zum Thema Verzerrung in Umfragen:</label>
+    <textarea rows="3" placeholder="Ihre Meinung..."></textarea>
+
+    <button type="submit">🕹️ Antworten senden</button>
   </form>
+
 </body>
 </html>
