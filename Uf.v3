@@ -1,0 +1,109 @@
+index.html 
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Internetnutzung & Verzerrungen – Online-Umfrage</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #00ffcc;
+      font-family: 'Courier New', monospace;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #00ffff;
+      text-shadow: 2px 2px #ff00ff;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+      background-color: #111;
+      padding: 20px;
+      border: 2px solid #ff00ff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #00ffff;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #ffcc00;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      background-color: #222;
+      color: #00ffcc;
+      border: 1px solid #00ffff;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #ff00ff;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 2px 2px #00ffff;
+    }
+    button:hover {
+      background-color: #cc00cc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🖥️ Online-Umfrage zur Internetnutzung (2000er Style)</h1>
+  <form>
+    <label>1. Haben Sie Zugang zum Internet?</label>
+    <select required>
+      <option value="">Bitte wählen...</option>
+      <option>Ja</option>
+      <option>Nein</option>
+    </select>
+
+    <label>2. Wie häufig nutzen Sie das Internet?</label>
+    <select>
+      <option>Täglich</option>
+      <option>Mehrmals pro Woche</option>
+      <option>Selten</option>
+      <option>Nie</option>
+    </select>
+
+    <label>3. Welche Geräte nutzen Sie für den Internetzugang?</label>
+    <input type="text" placeholder="z.B. Smartphone, Laptop, Tablet">
+
+    <label>4. Wie schätzen Sie Ihre Computerkenntnisse ein?</label>
+    <select>
+      <option>Experte</option>
+      <option>Fortgeschritten</option>
+      <option>Grundkenntnisse</option>
+      <option>Unsicher</option>
+    </select>
+
+    <label>5. Haben Sie schon einmal an einer Internetumfrage teilgenommen?</label>
+    <select>
+      <option>Ja</option>
+      <option>Nein</option>
+      <option>Ich weiß es nicht mehr</option>
+    </select>
+
+    <label>6. Welche Gruppen könnten Ihrer Meinung nach in Online-Umfragen unterrepräsentiert sein?</label>
+    <textarea rows="3" placeholder="z.B. ältere Menschen, Menschen ohne Internetzugang..."></textarea>
+
+    <label>7. Alter (optional):</label>
+    <input type="number" min="10" max="120" placeholder="Alter">
+
+    <label>8. Kommentare oder Gedanken zum Thema Verzerrung in Umfragen:</label>
+    <textarea rows="3" placeholder="Ihre Meinung..."></textarea>
+
+    <button type="submit">🕹️ Antworten senden</button>
+  </form>
+
+</body>
+</html>
